@@ -1,0 +1,4 @@
+.DS_Store
+*.swp
+
+UserInterfaceState.xcuserstate // ここで指定
