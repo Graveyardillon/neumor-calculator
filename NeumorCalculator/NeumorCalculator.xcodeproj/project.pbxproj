@@ -16,6 +16,7 @@
 		4109C58423F193CB007C59D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4109C58223F193CB007C59D0 /* LaunchScreen.storyboard */; };
 		4109C58F23F193CB007C59D0 /* NeumorCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C58E23F193CB007C59D0 /* NeumorCalculatorTests.swift */; };
 		4109C59A23F193CB007C59D0 /* NeumorCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C59923F193CB007C59D0 /* NeumorCalculatorUITests.swift */; };
+		4109C5AA23F195F1007C59D0 /* NeumorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5A923F195F1007C59D0 /* NeumorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4109C59523F193CB007C59D0 /* NeumorCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeumorCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4109C59923F193CB007C59D0 /* NeumorCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorCalculatorUITests.swift; sourceTree = "<group>"; };
 		4109C59B23F193CB007C59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4109C5A923F195F1007C59D0 /* NeumorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		4109C57323F193C7007C59D0 /* NeumorCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				4109C5A823F195DC007C59D0 /* Utils */,
 				4109C57423F193C7007C59D0 /* AppDelegate.swift */,
 				4109C57623F193C7007C59D0 /* SceneDelegate.swift */,
 				4109C57823F193C7007C59D0 /* ViewController.swift */,
@@ -129,6 +132,14 @@
 				4109C59B23F193CB007C59D0 /* Info.plist */,
 			);
 			path = NeumorCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		4109C5A823F195DC007C59D0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4109C5A923F195F1007C59D0 /* NeumorButton.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				4109C57F23F193C7007C59D0 /* NeumorCalculator.xcdatamodeld in Sources */,
 				4109C57523F193C7007C59D0 /* AppDelegate.swift in Sources */,
 				4109C57723F193C7007C59D0 /* SceneDelegate.swift in Sources */,
+				4109C5AA23F195F1007C59D0 /* NeumorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
