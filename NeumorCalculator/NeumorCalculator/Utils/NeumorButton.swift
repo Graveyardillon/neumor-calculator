@@ -1,9 +1,26 @@
-//
-//  NeumorButton.swift
-//  NeumorCalculator
-//
-//  Created by Papillon on 2020/02/10.
-//  Copyright © 2020 Papillon. All rights reserved.
-//
 
-import Foundation
+import UIKit
+
+class NeumorButton : UIButton {
+
+    @IBInspectable var textColor: UIColor?
+//
+//    @IBInspectable var cornerRadius: CGFloat = 0 {
+//        didSet {
+//            layer.cornerRadius = cornerRadius
+//        }
+//    }
+     
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+     
+    @IBInspectable var borderColor: UIColor = UIColor.clear {
+        didSet {
+            layer.borderColor = borderColor.cgColor
+        }
+    }
+    layer.cornerRadius = 30
+}
