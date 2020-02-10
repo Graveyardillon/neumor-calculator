@@ -17,6 +17,8 @@
 		4109C58F23F193CB007C59D0 /* NeumorCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C58E23F193CB007C59D0 /* NeumorCalculatorTests.swift */; };
 		4109C59A23F193CB007C59D0 /* NeumorCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C59923F193CB007C59D0 /* NeumorCalculatorUITests.swift */; };
 		4109C5AA23F195F1007C59D0 /* NeumorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5A923F195F1007C59D0 /* NeumorButton.swift */; };
+		4109C5AC23F1969D007C59D0 /* NeumorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5AB23F1969D007C59D0 /* NeumorLabel.swift */; };
+		4109C5B023F19C7B007C59D0 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5AF23F19C7B007C59D0 /* Params.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		4109C59923F193CB007C59D0 /* NeumorCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorCalculatorUITests.swift; sourceTree = "<group>"; };
 		4109C59B23F193CB007C59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4109C5A923F195F1007C59D0 /* NeumorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorButton.swift; sourceTree = "<group>"; };
+		4109C5AB23F1969D007C59D0 /* NeumorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorLabel.swift; sourceTree = "<group>"; };
+		4109C5AF23F19C7B007C59D0 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				4109C5A923F195F1007C59D0 /* NeumorButton.swift */,
+				4109C5AB23F1969D007C59D0 /* NeumorLabel.swift */,
+				4109C5AF23F19C7B007C59D0 /* Params.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4109C5AC23F1969D007C59D0 /* NeumorLabel.swift in Sources */,
+				4109C5B023F19C7B007C59D0 /* Params.swift in Sources */,
 				4109C57923F193C7007C59D0 /* ViewController.swift in Sources */,
 				4109C57F23F193C7007C59D0 /* NeumorCalculator.xcdatamodeld in Sources */,
 				4109C57523F193C7007C59D0 /* AppDelegate.swift in Sources */,
