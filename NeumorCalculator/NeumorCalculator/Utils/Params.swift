@@ -15,11 +15,19 @@ class Params {
   
   var LABEL_WIDTH: CGFloat
   var LABEL_HEIGHT: CGFloat
+  var LABEL_COLOR: UIColor = .red
+  
+  var CORNER_RADIUS: CGFloat = 30
+  
+  var LEFT_MARGIN: CGFloat
+  var TOP_MARGIN: CGFloat
   
   init(bounds: CGRect) {
     WIDTH = bounds.width
     HEIGHT = bounds.height
     LABEL_WIDTH = WIDTH * 0.8
     LABEL_HEIGHT = LABEL_WIDTH / 3.5
+    LEFT_MARGIN = WIDTH * 0.1
+    TOP_MARGIN = 100
   }
 }

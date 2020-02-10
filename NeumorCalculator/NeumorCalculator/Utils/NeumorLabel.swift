@@ -12,9 +12,22 @@ import UIKit
 class NeumorLabel: UILabel {
   override init(frame: CGRect) {
     super.init(frame: frame)
-    self.bounds = frame
     
-    self.backgroundColor = .red
+    let params = Params.init(bounds: frame)
+    
+    let label: UILabel = UILabel(
+      frame: CGRect(
+        x: params.LEFT_MARGIN,
+        y: params.TOP_MARGIN,
+        width: params.LABEL_WIDTH,
+        height: params.LABEL_HEIGHT
+      )
+    )
+    label.backgroundColor = params.LABEL_COLOR
+    label.layer.cornerRadius = params.CORNER_RADIUS
+    label.clipsToBounds = true
+    
+    self.addSubview(label)
   }
   
   required init?(coder: NSCoder) {
