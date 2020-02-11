@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBAction func UIButtonTest(_ sender: Any) {
+    }
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     
