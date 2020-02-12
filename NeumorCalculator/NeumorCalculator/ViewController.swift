@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBAction func UIButtonTest(_ sender: Any) {
-    }
-    
+  let params = Params(bounds: UIScreen.main.bounds)
+  
+  @IBAction func UIButtonTest(_ sender: Any) {
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    self.view.backgroundColor = params.BACKGROUND_COLOR
     let label: NeumorLabel = NeumorLabel(frame: UIScreen.main.bounds)
     
     self.view.addSubview(label)
