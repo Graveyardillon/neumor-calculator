@@ -20,16 +20,20 @@ class NeumorLabel: UILabel {
     }
     
     private let params = Params()
-    private let shadowLayer = CALayer()
+    
+    private let shadowLayer = CAGradientLayer(),
+                highlightLayer = CAGradientLayer()
     
     private func label() {
-        let path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: 5.0 ))
+        
+    }
+    private func putShadow() {
+        shadowLayer.cornerRadius = params.LABEL_CORNER_RADIUS
         shadowLayer.frame = self.bounds
-        shadowLayer.masksToBounds = true
-        shadowLayer.shadowColor = UIColor.black.cgColor
-        shadowLayer.shadowOffset = CGSize(width: 2.5, height: 2.5)
-        shadowLayer.shadowOpacity = params.SHADOW_OPACITY
-        shadowLayer.shadowPath = path.cgPath
-        self.layer.addSublayer(shadowLayer)
+        shadowLayer.colors = [
+        ]
+    }
+    private func putHighlight() {
+        
     }
 }
