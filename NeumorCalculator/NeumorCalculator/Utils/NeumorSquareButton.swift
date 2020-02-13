@@ -39,7 +39,7 @@ class NeumorSquareButton: UIButton {
     }
     private func putHighlight() {
         highlightLayer.backgroundColor = params.NORMAL_BUTTON_BGCOLOR.cgColor
-        highlightLayer.shadowColor = UIColor.white.cgColor
+        highlightLayer.shadowColor = params.BACKGROUND_COLOR.brighter().cgColor
         highlightLayer.cornerRadius = buttonLayer.frame.size.height * 0.15
         highlightLayer.shadowOpacity = 1
         highlightLayer.shadowOffset = CGSize(width: -6, height: -6)

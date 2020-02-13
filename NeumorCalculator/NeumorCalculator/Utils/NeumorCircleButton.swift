@@ -39,7 +39,7 @@ class NeumorCircleButton: UIButton {
     }
     private func putHighlight() {
         highlightLayer.fillColor = params.NORMAL_BUTTON_BGCOLOR.cgColor
-        highlightLayer.shadowColor = UIColor.white.cgColor
+        highlightLayer.shadowColor = params.BACKGROUND_COLOR.brighter().cgColor
         highlightLayer.path = UIBezierPath.init(ovalIn: CGRect.init(
             x: 0,
             y: 0,
