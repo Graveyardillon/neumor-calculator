@@ -9,8 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-  override func viewDidLoad() {
+    override func viewDidLoad() {
     super.viewDidLoad()
     
     let label: NeumorLabel = NeumorLabel(frame: UIScreen.main.bounds)

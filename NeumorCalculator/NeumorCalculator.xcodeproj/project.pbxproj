@@ -16,9 +16,10 @@
 		4109C58423F193CB007C59D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4109C58223F193CB007C59D0 /* LaunchScreen.storyboard */; };
 		4109C58F23F193CB007C59D0 /* NeumorCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C58E23F193CB007C59D0 /* NeumorCalculatorTests.swift */; };
 		4109C59A23F193CB007C59D0 /* NeumorCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C59923F193CB007C59D0 /* NeumorCalculatorUITests.swift */; };
-		4109C5AA23F195F1007C59D0 /* NeumorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5A923F195F1007C59D0 /* NeumorButton.swift */; };
 		4109C5AC23F1969D007C59D0 /* NeumorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5AB23F1969D007C59D0 /* NeumorLabel.swift */; };
 		4109C5B023F19C7B007C59D0 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5AF23F19C7B007C59D0 /* Params.swift */; };
+		81E39E4F23F4DF990072FDF7 /* NeumorSquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E39E4E23F4DF990072FDF7 /* NeumorSquareButton.swift */; };
+		81E39E5123F4FA6A0072FDF7 /* NeumorCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E39E5023F4FA6A0072FDF7 /* NeumorCircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +55,10 @@
 		4109C59523F193CB007C59D0 /* NeumorCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeumorCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4109C59923F193CB007C59D0 /* NeumorCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorCalculatorUITests.swift; sourceTree = "<group>"; };
 		4109C59B23F193CB007C59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4109C5A923F195F1007C59D0 /* NeumorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorButton.swift; sourceTree = "<group>"; };
 		4109C5AB23F1969D007C59D0 /* NeumorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorLabel.swift; sourceTree = "<group>"; };
 		4109C5AF23F19C7B007C59D0 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		81E39E4E23F4DF990072FDF7 /* NeumorSquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorSquareButton.swift; sourceTree = "<group>"; };
+		81E39E5023F4FA6A0072FDF7 /* NeumorCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorCircleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +143,10 @@
 		4109C5A823F195DC007C59D0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				4109C5A923F195F1007C59D0 /* NeumorButton.swift */,
 				4109C5AB23F1969D007C59D0 /* NeumorLabel.swift */,
 				4109C5AF23F19C7B007C59D0 /* Params.swift */,
+				81E39E4E23F4DF990072FDF7 /* NeumorSquareButton.swift */,
+				81E39E5023F4FA6A0072FDF7 /* NeumorCircleButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -280,12 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4109C5AC23F1969D007C59D0 /* NeumorLabel.swift in Sources */,
+				81E39E5123F4FA6A0072FDF7 /* NeumorCircleButton.swift in Sources */,
 				4109C5B023F19C7B007C59D0 /* Params.swift in Sources */,
 				4109C57923F193C7007C59D0 /* ViewController.swift in Sources */,
 				4109C57F23F193C7007C59D0 /* NeumorCalculator.xcdatamodeld in Sources */,
 				4109C57523F193C7007C59D0 /* AppDelegate.swift in Sources */,
 				4109C57723F193C7007C59D0 /* SceneDelegate.swift in Sources */,
-				4109C5AA23F195F1007C59D0 /* NeumorButton.swift in Sources */,
+				81E39E4F23F4DF990072FDF7 /* NeumorSquareButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
