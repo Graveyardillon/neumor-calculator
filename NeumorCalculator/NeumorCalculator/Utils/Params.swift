@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-let bgColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-
 class Params {
     open var WIDTH: CGFloat?
     open var HEIGHT: CGFloat?

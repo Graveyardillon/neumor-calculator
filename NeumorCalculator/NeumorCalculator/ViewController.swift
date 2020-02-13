@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+    @IBOutlet weak var button: NeumorSquareButton!
+    @IBAction func buttonPush(_ sender: NeumorSquareButton) {
+        sender.touchDownEffect()
+    }
+    @IBAction func buttonUp(_ sender: NeumorSquareButton) {
+        sender.button()
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
             
