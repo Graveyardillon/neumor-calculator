@@ -9,24 +9,24 @@
 import Foundation
 import UIKit
 
-let bgColor = #colorLiteral(red: 0.9025, green: 0.9194645762, blue: 0.95, alpha: 1)
+let bgColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
 
 class Params {
     open var WIDTH: CGFloat?
     open var HEIGHT: CGFloat?
-    open var BACKGROUND_COLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+    open var BACKGROUND_COLOR = #colorLiteral(red: 0.9058823529, green: 0.9058823529, blue: 0.9058823529, alpha: 1)
 
     open var LABEL_WIDTH: CGFloat
     open var LABEL_HEIGHT: CGFloat
-    open var LABEL_COLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+    open var LABEL_COLOR = #colorLiteral(red: 0.9057930112, green: 0.905945003, blue: 0.9057729244, alpha: 1)
     open var LABEL_LEFT_MARGIN: CGFloat
     open var LABEL_TOP_MARGIN: CGFloat
     open var LABEL_CORNER_RADIUS: CGFloat = 15
-    open var LABEL_BGCOLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+    open var LABEL_BGCOLOR = #colorLiteral(red: 0.9057930112, green: 0.905945003, blue: 0.9057729244, alpha: 1)
     open var LABEL_SHADOW_RADIUS: CGFloat = 10
 
-    open var NORMAL_BUTTON_BGCOLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
-    open var RED_BUTTON_BGCOLOR = UIColor(hex: "f3ecec")
+    open var NORMAL_BUTTON_BGCOLOR = #colorLiteral(red: 0.9057930112, green: 0.905945003, blue: 0.9057729244, alpha: 1)
+    open var RED_BUTTON_BGCOLOR = #colorLiteral(red: 0.9529411765, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
 
     open var HIGHLIGHT_OPACITY: Float = 1
     open var SHADOW_OPACITY: Float = 0.25
