@@ -11,8 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
-        self.view.backgroundColor = bgColor
-    }
+    
+    //self.view.backgroundColor = params.BACKGROUND_COLOR
+    //let label: NeumorLabel = NeumorLabel(frame: UIScreen.main.bounds)
+    
+    //self.view.addSubview(label)
+  }
+
+
 }
 
