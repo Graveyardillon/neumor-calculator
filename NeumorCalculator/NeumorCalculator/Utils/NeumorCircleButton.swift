@@ -19,9 +19,8 @@ class NeumorCircleButton: UIButton {
         button()
     }
   
-    let params = Params()
-    
-    let buttonLayer = CAShapeLayer(),
+    private let params = Params()
+    private let buttonLayer = CAShapeLayer(),
         highlightLayer = CAShapeLayer(),
         shadowLayer = CAShapeLayer()
         
@@ -33,12 +32,12 @@ class NeumorCircleButton: UIButton {
             $0.frame = layer.bounds
             layer.insertSublayer($0, at: 0)
         }
-        highlight()
-        shadow()
+        putHighlight()
+        putShadow()
         buttonLayer.addSublayer(shadowLayer)
         buttonLayer.addSublayer(highlightLayer)
     }
-    private func highlight() {
+    private func putHighlight() {
         highlightLayer.fillColor = params.NORMAL_BUTTON_BGCOLOR.cgColor
         highlightLayer.shadowColor = UIColor.white.cgColor
         highlightLayer.path = UIBezierPath.init(ovalIn: CGRect.init(
@@ -51,7 +50,7 @@ class NeumorCircleButton: UIButton {
         highlightLayer.shadowOffset = params.HIGHLIGHT_OFFSET_6
         highlightLayer.shadowRadius = params.SQUARE_SHADOW_RADIUS
     }
-    private func shadow() {
+    private func putShadow() {
         shadowLayer.fillColor = UIColor.white.cgColor
         shadowLayer.shadowColor = UIColor.black.cgColor
         shadowLayer.path = UIBezierPath.init(ovalIn: CGRect.init(
