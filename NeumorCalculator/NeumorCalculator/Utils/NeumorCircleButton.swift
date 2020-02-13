@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NeumorSquareButton: UIButton {
+class NeumorCircleButton: UIButton {
     override init(frame: CGRect){
         super.init(frame: frame)
         button()
@@ -19,12 +19,12 @@ class NeumorSquareButton: UIButton {
         button()
     }
     
-    let buttonLayer = CALayer(),
-        highlightLayer = CALayer(),
-        shadowLayer = CALayer()
+    let buttonLayer = CAShapeLayer(),
+        highlightLayer = CAShapeLayer(),
+        shadowLayer = CAShapeLayer()
         
     func button() {
-        setTitle("SquareButton", for: .normal)
+        setTitle("CircleButton", for: .normal)
         setTitleColor(UIColor.gray, for: .normal)
         [buttonLayer, highlightLayer, shadowLayer] .forEach {
             $0.masksToBounds = false
@@ -37,17 +37,27 @@ class NeumorSquareButton: UIButton {
         buttonLayer.addSublayer(highlightLayer)
     }
     private func highlight() {
-        highlightLayer.backgroundColor = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1).cgColor
+        highlightLayer.fillColor = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1).cgColor
         highlightLayer.shadowColor = UIColor.white.cgColor
-        highlightLayer.cornerRadius = buttonLayer.frame.size.height * 0.15
+        highlightLayer.path = UIBezierPath.init(ovalIn: CGRect.init(
+            x: 0,
+            y: 0,
+            width: self.frame.size.width,
+            height: self.frame.size.height
+        )).cgPath
         highlightLayer.shadowOpacity = 1
         highlightLayer.shadowOffset = CGSize(width: -6, height: -6)
         highlightLayer.shadowRadius = 10
     }
     private func shadow() {
-        shadowLayer.backgroundColor = UIColor.white.cgColor
+        shadowLayer.fillColor = UIColor.white.cgColor
         shadowLayer.shadowColor = UIColor.black.cgColor
-        shadowLayer.cornerRadius = 20
+        shadowLayer.path = UIBezierPath.init(ovalIn: CGRect.init(
+            x: 0,
+            y: 0,
+            width: self.frame.size.width,
+            height: self.frame.size.height
+        )).cgPath
         shadowLayer.shadowOpacity = 0.25
         shadowLayer.shadowOffset = CGSize(width: 6, height: 6)
         shadowLayer.shadowRadius = 10
