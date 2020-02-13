@@ -55,5 +55,12 @@ class NeumorSquareButton: UIButton {
         shadowLayer.shadowOffset = CGSize(width: 6, height: 6)
         shadowLayer.shadowRadius = 10
     }
+    func touchDownEffect() {
+        highlightLayer.backgroundColor = UIColor.red.cgColor
+    }
+    func touchUpEffect() {
+//        button()
+        highlightLayer.backgroundColor = UIColor.blue.cgColor
+    }
 }
 
