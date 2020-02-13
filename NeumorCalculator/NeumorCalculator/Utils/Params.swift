@@ -18,7 +18,6 @@ class Params {
 
     open var LABEL_WIDTH: CGFloat
     open var LABEL_HEIGHT: CGFloat
-    open var LABEL_COLOR = #colorLiteral(red: 0.9057930112, green: 0.905945003, blue: 0.9057729244, alpha: 1)
     open var LABEL_LEFT_MARGIN: CGFloat
     open var LABEL_TOP_MARGIN: CGFloat
     open var LABEL_CORNER_RADIUS: CGFloat = 15

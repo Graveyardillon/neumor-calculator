@@ -12,50 +12,24 @@ import UIKit
 class NeumorLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-        let params = Params.init(bounds: frame)
-
-        let label: UILabel = UILabel(
-          frame: CGRect(
-            x: params.LABEL_LEFT_MARGIN,
-            y: params.LABEL_TOP_MARGIN,
-            width: params.LABEL_WIDTH,
-            height: params.LABEL_HEIGHT
-          )
-        )
-        label.backgroundColor = params.LABEL_COLOR
-        label.layer.cornerRadius = params.LABEL_CORNER_RADIUS
-        label.clipsToBounds = true
-
-        self.addSubview(label)
+        label()
     }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        label()
     }
     
     private let params = Params()
-    private let labelLayer = CALayer(),
-                highlightLayer = CALayer(),
-                shadowLayer = CALayer()
+    private let shadowLayer = CALayer()
     
-    // TODO: Define a pertinent function name
-    func label() {
-        [labelLayer, highlightLayer, shadowLayer].forEach {
-            $0.masksToBounds = true
-            $0.frame = layer.bounds
-            layer.insertSublayer($0, at: 0)
-        }
-        putHighlight()
-        putShadow()
-    }
-    private func putHighlight() {
-        highlightLayer.backgroundColor = params.LABEL_BGCOLOR.cgColor
-        highlightLayer.shadowColor = UIColor.white.cgColor
-        highlightLayer.shadowOpacity = params.HIGHLIGHT_OPACITY
-        highlightLayer.shadowOffset = CGSize(width: 6, height: 6)
-        highlightLayer.shadowRadius = params.LABEL_SHADOW_RADIUS
-    }
-    private func putShadow() {
-        
+    private func label() {
+        let path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: 5.0 ))
+        shadowLayer.frame = self.bounds
+        shadowLayer.masksToBounds = true
+        shadowLayer.shadowColor = UIColor.black.cgColor
+        shadowLayer.shadowOffset = CGSize(width: 2.5, height: 2.5)
+        shadowLayer.shadowOpacity = params.SHADOW_OPACITY
+        shadowLayer.shadowPath = path.cgPath
+        self.layer.addSublayer(shadowLayer)
     }
 }

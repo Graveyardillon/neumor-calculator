@@ -15,9 +15,6 @@ class ViewController: UIViewController {
         let params = Params()
 
         self.view.backgroundColor = params.BACKGROUND_COLOR
-        let label: NeumorLabel = NeumorLabel(frame: UIScreen.main.bounds)
-
-        self.view.addSubview(label)
     }
 }
 

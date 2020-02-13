@@ -24,7 +24,7 @@ class NeumorSquareButton: UIButton {
                 highlightLayer = CALayer(),
                 shadowLayer = CALayer()
         
-    func button() {
+    private func button() {
         setTitle("■", for: .normal)
         setTitleColor(UIColor.gray, for: .normal)
         [buttonLayer, highlightLayer, shadowLayer].forEach {
