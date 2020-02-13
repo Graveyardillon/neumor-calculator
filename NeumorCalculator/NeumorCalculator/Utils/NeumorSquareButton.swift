@@ -24,7 +24,7 @@ class NeumorSquareButton: UIButton {
         shadowLayer = CALayer()
         
     func button() {
-        setTitle("SquareButton", for: .normal)
+        setTitle("■", for: .normal)
         setTitleColor(UIColor.gray, for: .normal)
         [buttonLayer, highlightLayer, shadowLayer] .forEach {
             $0.masksToBounds = false
@@ -37,19 +37,22 @@ class NeumorSquareButton: UIButton {
         buttonLayer.addSublayer(highlightLayer)
     }
     private func highlight() {
-        highlightLayer.backgroundColor = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1).cgColor
-        highlightLayer.shadowColor = UIColor.white.cgColor
+        highlightLayer.backgroundColor = bgColor.cgColor
+        highlightLayer.shadowColor = bgColor.brighter().cgColor
         highlightLayer.cornerRadius = buttonLayer.frame.size.height * 0.15
         highlightLayer.shadowOpacity = 1
         highlightLayer.shadowOffset = CGSize(width: -6, height: -6)
         highlightLayer.shadowRadius = 10
+//        highlightLayer.borderWidth = 1
+//        highlightLayer.borderColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5).cgColor
     }
     private func shadow() {
         shadowLayer.backgroundColor = UIColor.white.cgColor
         shadowLayer.shadowColor = UIColor.black.cgColor
         shadowLayer.cornerRadius = 20
-        shadowLayer.shadowOpacity = 0.25
+        shadowLayer.shadowOpacity = 0.15
         shadowLayer.shadowOffset = CGSize(width: 6, height: 6)
         shadowLayer.shadowRadius = 10
     }
 }
+

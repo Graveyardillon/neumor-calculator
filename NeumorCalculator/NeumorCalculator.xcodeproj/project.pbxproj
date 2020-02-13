@@ -20,6 +20,7 @@
 		4109C5B023F19C7B007C59D0 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C5AF23F19C7B007C59D0 /* Params.swift */; };
 		81E39E4F23F4DF990072FDF7 /* NeumorSquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E39E4E23F4DF990072FDF7 /* NeumorSquareButton.swift */; };
 		81E39E5123F4FA6A0072FDF7 /* NeumorCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E39E5023F4FA6A0072FDF7 /* NeumorCircleButton.swift */; };
+		81E39E5523F518080072FDF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E39E5423F518080072FDF7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4109C5AF23F19C7B007C59D0 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 		81E39E4E23F4DF990072FDF7 /* NeumorSquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorSquareButton.swift; sourceTree = "<group>"; };
 		81E39E5023F4FA6A0072FDF7 /* NeumorCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorCircleButton.swift; sourceTree = "<group>"; };
+		81E39E5423F518080072FDF7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				4109C5AF23F19C7B007C59D0 /* Params.swift */,
 				81E39E4E23F4DF990072FDF7 /* NeumorSquareButton.swift */,
 				81E39E5023F4FA6A0072FDF7 /* NeumorCircleButton.swift */,
+				81E39E5423F518080072FDF7 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4109C5AC23F1969D007C59D0 /* NeumorLabel.swift in Sources */,
+				81E39E5523F518080072FDF7 /* Extensions.swift in Sources */,
 				81E39E5123F4FA6A0072FDF7 /* NeumorCircleButton.swift in Sources */,
 				4109C5B023F19C7B007C59D0 /* Params.swift in Sources */,
 				4109C57923F193C7007C59D0 /* ViewController.swift in Sources */,
