@@ -47,7 +47,22 @@ class NeumorTest: UIButton {
             1
         ]
         VirticalgradLayer.cornerRadius = 20
-        VirticalgradLayer.transform = CATransform3DMakeRotation(CGFloat.pi / 180 * 270 , 0, 0, 1)
+        let HorizongradLayer = CAGradientLayer()
+        HorizongradLayer.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        HorizongradLayer.colors = [
+            params.BACKGROUND_COLOR.darker().cgColor,
+            params.NORMAL_BUTTON_BGCOLOR.cgColor,
+            params.NORMAL_BUTTON_BGCOLOR.cgColor,
+            params.BACKGROUND_COLOR.brighter().cgColor
+        ]
+        HorizongradLayer.locations = [
+            0,
+            0.15,
+            0.85,
+            1
+        ]
+        HorizongradLayer.cornerRadius = 20
+        HorizongradLayer.transform = CATransform3DMakeRotation(CGFloat.pi / 180 * 270 , 0, 0, 1)
         
         
         
