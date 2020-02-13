@@ -17,14 +17,14 @@ class NeumorLabel: UILabel {
     
     let label: UILabel = UILabel(
       frame: CGRect(
-        x: params.LEFT_MARGIN,
-        y: params.TOP_MARGIN,
+        x: params.LABEL_LEFT_MARGIN,
+        y: params.LABEL_TOP_MARGIN,
         width: params.LABEL_WIDTH,
         height: params.LABEL_HEIGHT
       )
     )
     label.backgroundColor = params.LABEL_COLOR
-    label.layer.cornerRadius = params.CORNER_RADIUS
+    label.layer.cornerRadius = params.LABEL_CORNER_RADIUS
     label.clipsToBounds = true
     
     self.addSubview(label)

@@ -10,27 +10,42 @@ import Foundation
 import UIKit
 
 class Params {
-  var WIDTH: CGFloat
-  var HEIGHT: CGFloat
-  var BACKGROUND_COLOR = UIColor(hex: "f3ecec")
+    var WIDTH: CGFloat?
+    var HEIGHT: CGFloat?
+    var BACKGROUND_COLOR = UIColor(hex: "f3ecec")
+
+    var LABEL_WIDTH: CGFloat
+    var LABEL_HEIGHT: CGFloat
+    var LABEL_COLOR = UIColor(hex: "f3ecec")
+    var LABEL_LEFT_MARGIN: CGFloat
+    var LABEL_TOP_MARGIN: CGFloat
+    var LABEL_CORNER_RADIUS: CGFloat = 15
+
+    var NORMAL_BUTTON_BGCOLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+
+    var HIGHLIGHT_OPACITY: Float = 1
+    var SHADOW_OPACITY: Float = 0.25
+    var HIGHLIGHT_OFFSET_6: CGSize = CGSize(width: -6, height: -6)
+    var SHADOW_OFFSET_6: CGSize = CGSize(width: 6, height: 6)
+    
+    var SQUARE_SHADOW_RADIUS: CGFloat = 10
   
-  var LABEL_WIDTH: CGFloat
-  var LABEL_HEIGHT: CGFloat
-  var LABEL_COLOR = UIColor(hex: "f3ecec")
-  
-  var CORNER_RADIUS: CGFloat = 15
-  
-  var LEFT_MARGIN: CGFloat
-  var TOP_MARGIN: CGFloat
-  
-  init(bounds: CGRect) {
-    WIDTH = bounds.width
-    HEIGHT = bounds.height
-    LABEL_WIDTH = WIDTH * 0.8
-    LABEL_HEIGHT = LABEL_WIDTH / 3.5
-    LEFT_MARGIN = WIDTH * 0.1
-    TOP_MARGIN = 150
-  }
+    init(bounds: CGRect) {
+        self.WIDTH = bounds.width
+        self.HEIGHT = bounds.height
+        self.LABEL_WIDTH = (WIDTH ?? 0) * 0.8
+        self.LABEL_HEIGHT = LABEL_WIDTH / 3.5
+        self.LABEL_LEFT_MARGIN = (WIDTH ?? 0) * 0.1
+        self.LABEL_TOP_MARGIN = 150
+    }
+        init() {
+        self.WIDTH = nil
+        self.HEIGHT = nil
+        self.LABEL_WIDTH = 0
+        self.LABEL_HEIGHT = 0
+        self.LABEL_LEFT_MARGIN = 0
+        self.LABEL_TOP_MARGIN = 0
+    }
 }
 
 extension UIColor {

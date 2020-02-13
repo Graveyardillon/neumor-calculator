@@ -12,10 +12,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.view.backgroundColor = params.BACKGROUND_COLOR
-    let label: NeumorLabel = NeumorLabel(frame: UIScreen.main.bounds)
+    //self.view.backgroundColor = params.BACKGROUND_COLOR
+    //let label: NeumorLabel = NeumorLabel(frame: UIScreen.main.bounds)
     
-    self.view.addSubview(label)
+    //self.view.addSubview(label)
   }
 
 
