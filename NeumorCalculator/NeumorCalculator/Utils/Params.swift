@@ -12,25 +12,26 @@ import UIKit
 let bgColor = #colorLiteral(red: 0.9025, green: 0.9194645762, blue: 0.95, alpha: 1)
 
 class Params {
-    var WIDTH: CGFloat?
-    var HEIGHT: CGFloat?
-    var BACKGROUND_COLOR = UIColor(hex: "f3ecec")
+    open var WIDTH: CGFloat?
+    open var HEIGHT: CGFloat?
+    open var BACKGROUND_COLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
 
-    var LABEL_WIDTH: CGFloat
-    var LABEL_HEIGHT: CGFloat
-    var LABEL_COLOR = UIColor(hex: "f3ecec")
-    var LABEL_LEFT_MARGIN: CGFloat
-    var LABEL_TOP_MARGIN: CGFloat
-    var LABEL_CORNER_RADIUS: CGFloat = 15
+    open var LABEL_WIDTH: CGFloat
+    open var LABEL_HEIGHT: CGFloat
+    open var LABEL_COLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+    open var LABEL_LEFT_MARGIN: CGFloat
+    open var LABEL_TOP_MARGIN: CGFloat
+    open var LABEL_CORNER_RADIUS: CGFloat = 15
 
-    var NORMAL_BUTTON_BGCOLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+    open var NORMAL_BUTTON_BGCOLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+    open var RED_BUTTON_BGCOLOR = UIColor(hex: "f3ecec")
 
-    var HIGHLIGHT_OPACITY: Float = 1
-    var SHADOW_OPACITY: Float = 0.25
-    var HIGHLIGHT_OFFSET_6: CGSize = CGSize(width: -6, height: -6)
-    var SHADOW_OFFSET_6: CGSize = CGSize(width: 6, height: 6)
+    open var HIGHLIGHT_OPACITY: Float = 1
+    open var SHADOW_OPACITY: Float = 0.25
+    open var HIGHLIGHT_OFFSET_6: CGSize = CGSize(width: -6, height: -6)
+    open var SHADOW_OFFSET_6: CGSize = CGSize(width: 6, height: 6)
     
-    var SQUARE_SHADOW_RADIUS: CGFloat = 10
+    open var SQUARE_SHADOW_RADIUS: CGFloat = 10
   
     init(bounds: CGRect) {
         self.WIDTH = bounds.width
