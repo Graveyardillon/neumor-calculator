@@ -45,9 +45,15 @@ class NeumorLabel: UILabel {
             $0.frame = layer.bounds
             layer.insertSublayer($0, at: 0)
         }
+        putHighlight()
+        putShadow()
     }
     private func putHighlight() {
-        
+        highlightLayer.backgroundColor = params.LABEL_BGCOLOR.cgColor
+        highlightLayer.shadowColor = UIColor.white.cgColor
+        highlightLayer.shadowOpacity = params.HIGHLIGHT_OPACITY
+        highlightLayer.shadowOffset = CGSize(width: 6, height: 6)
+        highlightLayer.shadowRadius = params.LABEL_SHADOW_RADIUS
     }
     private func putShadow() {
         

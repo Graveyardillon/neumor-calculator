@@ -20,6 +20,8 @@ class Params {
     open var LABEL_LEFT_MARGIN: CGFloat
     open var LABEL_TOP_MARGIN: CGFloat
     open var LABEL_CORNER_RADIUS: CGFloat = 15
+    open var LABEL_BGCOLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
+    open var LABEL_SHADOW_RADIUS: CGFloat = 10
 
     open var NORMAL_BUTTON_BGCOLOR = UIColor(red: 231/255, green: 231/255, blue: 231/255, alpha: 1)
     open var RED_BUTTON_BGCOLOR = UIColor(hex: "f3ecec")
