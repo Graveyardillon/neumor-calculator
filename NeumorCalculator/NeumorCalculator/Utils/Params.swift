@@ -38,7 +38,7 @@ class Params {
         self.LABEL_LEFT_MARGIN = (WIDTH ?? 0) * 0.1
         self.LABEL_TOP_MARGIN = 150
     }
-        init() {
+    init() {
         self.WIDTH = nil
         self.HEIGHT = nil
         self.LABEL_WIDTH = 0
