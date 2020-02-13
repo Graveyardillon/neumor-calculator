@@ -9,12 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-  let params = Params(bounds: UIScreen.main.bounds)
-  
-  @IBAction func UIButtonTest(_ sender: Any) {
-  }
-  
-  override func viewDidLoad() {
+    override func viewDidLoad() {
     super.viewDidLoad()
     
     self.view.backgroundColor = params.BACKGROUND_COLOR
