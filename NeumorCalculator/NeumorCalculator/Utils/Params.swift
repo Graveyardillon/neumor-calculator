@@ -12,7 +12,7 @@ import UIKit
 class Params {
     open var WIDTH: CGFloat?
     open var HEIGHT: CGFloat?
-    open var BACKGROUND_COLOR = #colorLiteral(red: 0.9058823529, green: 0.9058823529, blue: 0.9058823529, alpha: 1)
+    open var BACKGROUND_COLOR = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
 
     open var LABEL_WIDTH: CGFloat
     open var LABEL_HEIGHT: CGFloat
@@ -22,7 +22,7 @@ class Params {
     open var LABEL_BGCOLOR = #colorLiteral(red: 0.9057930112, green: 0.905945003, blue: 0.9057729244, alpha: 1)
     open var LABEL_SHADOW_RADIUS: CGFloat = 10
 
-    open var NORMAL_BUTTON_BGCOLOR = #colorLiteral(red: 0.9057930112, green: 0.905945003, blue: 0.9057729244, alpha: 1)
+    open var NORMAL_BUTTON_BGCOLOR = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
     open var RED_BUTTON_BGCOLOR = #colorLiteral(red: 0.9529411765, green: 0.9254901961, blue: 0.9254901961, alpha: 1)
 
     open var HIGHLIGHT_OPACITY: Float = 1
