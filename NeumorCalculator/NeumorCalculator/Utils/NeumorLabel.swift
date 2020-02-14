@@ -9,10 +9,9 @@
 import Foundation
 import UIKit
 
-class NeumorLabel: UILabel {
+class NeumorLabel: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.text = "Hello"
         label()
     }
     required init?(coder aDecoder: NSCoder) {
@@ -24,10 +23,12 @@ class NeumorLabel: UILabel {
     
     private let topAndBottomLayer = CAGradientLayer(),
                 leftAndRightLayer = CAGradientLayer()
+    private let textLayer = CATextLayer()
     
     private func label() {
         putTopAndBottom()
         putLeftAndRight()
+        putUILabel()
     }
     private func putTopAndBottom() {
         topAndBottomLayer.cornerRadius = params.LABEL_CORNER_RADIUS
@@ -66,5 +67,19 @@ class NeumorLabel: UILabel {
         leftAndRightLayer.endPoint = CGPoint(x: 1, y: 0)
         leftAndRightLayer.opacity = 0.5
         layer.addSublayer(leftAndRightLayer)
+    }
+    private func putUILabel() {
+        let calcResultLabel = UILabel()
+        calcResultLabel.text = "0" // initial value
+        calcResultLabel.frame = CGRect(
+            x: 0,
+            y: 0,
+            width: self.bounds.width * 0.9,
+            height: self.bounds.height
+        )
+        calcResultLabel.textAlignment = .right
+        calcResultLabel.font.withSize(30)
+        
+        self.addSubview(calcResultLabel)
     }
 }
