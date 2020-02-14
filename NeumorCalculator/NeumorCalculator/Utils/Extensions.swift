@@ -16,7 +16,7 @@ extension UIColor {
             brightness: CGFloat = 0,
             alpha: CGFloat = 0
         if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
-            return UIColor(hue: hue, saturation: saturation * 0.75, brightness: brightness * 1.1, alpha: alpha)
+            return UIColor(hue: hue, saturation: saturation * 0.9, brightness: brightness * 1.1, alpha: alpha)
         } else {
             return self
         }
