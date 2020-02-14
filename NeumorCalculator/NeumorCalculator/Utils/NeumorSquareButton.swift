@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+// TODO: set in params
+let FONT_SIZE = 14
+
 class NeumorSquareButton: UIButton {
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -23,21 +26,26 @@ class NeumorSquareButton: UIButton {
     let highlightLayer = CALayer(),
         shadowLayer = CALayer(),
         textLayer = CATextLayer()
+    
     func button() {
         setTitleColor(UIColor.clear, for: .normal)
         textLayer.string = currentTitle
         textLayer.foregroundColor = UIColor.red.cgColor
         textLayer.contentsScale = UIScreen.main.scale
-        textLayer.fontSize = 14
+        textLayer.fontSize = CGFloat(FONT_SIZE)
         textLayer.alignmentMode = .center
-        textLayer.frame = CGRect(x: 60, y: 60, width: 60, height: 60)
-
         
         [highlightLayer, shadowLayer, textLayer].forEach {
             $0.masksToBounds = false
             $0.frame = layer.bounds
-            layer.insertSublayer($0, at: 0)
         }
+        
+        textLayer.frame = CGRect(
+            x: CGFloat(0),
+            y: self.bounds.height/2 - CGFloat(FONT_SIZE/2),
+            width: self.bounds.width,
+            height: CGFloat(FONT_SIZE)
+        )
         
         putHighlight()
         putShadow()
