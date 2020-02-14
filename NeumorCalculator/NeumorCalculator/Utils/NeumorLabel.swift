@@ -78,7 +78,7 @@ class NeumorLabel: UIView {
             height: self.bounds.height
         )
         calcResultLabel.textAlignment = .right
-        calcResultLabel.font.withSize(30)
+        calcResultLabel.font = UIFont(name: "Roboto-Bold", size: 30)
         
         self.addSubview(calcResultLabel)
     }
