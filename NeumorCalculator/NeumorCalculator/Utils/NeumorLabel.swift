@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NeumorLabel: UIView {
+class NeumorLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         label()
@@ -22,13 +22,13 @@ class NeumorLabel: UIView {
     private let params = Params()
     
     private let topAndBottomLayer = CAGradientLayer(),
-                leftAndRightLayer = CAGradientLayer()
-    private let textLayer = CATextLayer()
+                leftAndRightLayer = CAGradientLayer(),
+                calcResultLabel = UILabel()
     
     private func label() {
         putTopAndBottom()
         putLeftAndRight()
-        putUILabel()
+        addSubview(calcResultLabel)
     }
     private func putTopAndBottom() {
         topAndBottomLayer.cornerRadius = params.LABEL_CORNER_RADIUS
@@ -46,7 +46,7 @@ class NeumorLabel: UIView {
             1
         ]
         topAndBottomLayer.opacity = 1
-        layer.addSublayer(topAndBottomLayer)
+        layer.insertSublayer(topAndBottomLayer, at: 0)
     }
     private func putLeftAndRight() {
         leftAndRightLayer.cornerRadius = params.LABEL_CORNER_RADIUS
@@ -66,20 +66,17 @@ class NeumorLabel: UIView {
         leftAndRightLayer.startPoint = CGPoint(x: 0, y: 0)
         leftAndRightLayer.endPoint = CGPoint(x: 1, y: 0)
         leftAndRightLayer.opacity = 0.5
-        layer.addSublayer(leftAndRightLayer)
+        layer.insertSublayer(leftAndRightLayer, at: 1)
     }
-    private func putUILabel() {
-        let calcResultLabel = UILabel()
-        calcResultLabel.text = "0" // initial value
+    func putUILabel(text: String) {
+        calcResultLabel.text = text
         calcResultLabel.frame = CGRect(
-            x: 0,
+            x: 15,
             y: 0,
             width: self.bounds.width * 0.9,
             height: self.bounds.height
         )
         calcResultLabel.textAlignment = .right
         calcResultLabel.font = UIFont(name: "Roboto-Bold", size: 30)
-        
-        self.addSubview(calcResultLabel)
     }
 }

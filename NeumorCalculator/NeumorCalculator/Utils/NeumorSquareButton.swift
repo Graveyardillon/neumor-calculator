@@ -49,6 +49,7 @@ class NeumorSquareButton: UIButton {
         
         putHighlight()
         putShadow()
+
         layer.addSublayer(shadowLayer)
         layer.addSublayer(highlightLayer)
         layer.addSublayer(textLayer)
@@ -104,6 +105,8 @@ class NeumorSquareButton: UIButton {
         layer.addSublayer(horizonGradLayer)
         layer.addSublayer(virticalGradLayer)
         layer.addSublayer(textLayer)
+        
+
     }
 }
 
