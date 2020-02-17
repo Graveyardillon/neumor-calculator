@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // TODO: set in params
-let FONT_SIZE = 14
+let FONT_SIZE = 16
 
 class NeumorSquareButton: UIButton {
     override init(frame: CGRect){
@@ -30,7 +30,7 @@ class NeumorSquareButton: UIButton {
     func button() {
         setTitleColor(UIColor.clear, for: .normal)
         textLayer.string = currentTitle
-        textLayer.foregroundColor = UIColor.red.cgColor
+        textLayer.foregroundColor = UIColor.gray.cgColor
         textLayer.contentsScale = UIScreen.main.scale
         textLayer.fontSize = CGFloat(FONT_SIZE)
         textLayer.alignmentMode = .center
@@ -71,7 +71,7 @@ class NeumorSquareButton: UIButton {
         shadowLayer.shadowRadius = 10
     }
     
-    func touchDownEffect() {
+    func buttonPush() {
         highlightLayer.shadowOpacity = 0
         shadowLayer.shadowOpacity = 0
 
@@ -84,7 +84,7 @@ class NeumorSquareButton: UIButton {
         ]
         let gradLocations = [0, 0.15, 0.85, 1]
         let shadowOpacity: Float = 0.5
-        let cornerRadius: CGFloat = 20
+        let cornerRadius = layer.frame.size.height * 0.15
         
         let virticalGradLayer = CAGradientLayer()
             virticalGradLayer.opacity = shadowOpacity
@@ -95,10 +95,11 @@ class NeumorSquareButton: UIButton {
         let horizonGradLayer = CAGradientLayer()
             horizonGradLayer.opacity = shadowOpacity
             horizonGradLayer.frame = frame
+            horizonGradLayer.startPoint = CGPoint(x: 0, y: 0)
+            horizonGradLayer.endPoint = CGPoint(x: 1, y: 0)
             horizonGradLayer.colors = gradColors
             horizonGradLayer.locations = gradLocations as [NSNumber]
             horizonGradLayer.cornerRadius = cornerRadius
-            horizonGradLayer.transform = CATransform3DMakeRotation(CGFloat.pi / 180 * 270 , 0, 0, 1)
         
         layer.addSublayer(horizonGradLayer)
         layer.addSublayer(virticalGradLayer)
