@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             label.putUILabel(text: label.text!)
             currentOperation = sender.tag
             performingMath = true;
-        } else if sender.tag == 19 {
+        } else if sender.tag == 19 { // =
             if currentOperation == 11 {
                 label.text = String(previousNumber + numberOnScreen)
             } else if currentOperation == 12 {
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
                 label.text = String(previousNumber / numberOnScreen)
             }
             label.putUILabel(text: label.text!)
-        } else if sender.tag == 20 {
+        } else if sender.tag == 20 { // C
             label.text = ""
             label.putUILabel(text: "")
             currentOperation = 0
