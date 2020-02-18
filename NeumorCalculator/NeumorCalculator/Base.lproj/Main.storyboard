@@ -29,6 +29,7 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="ubY-AG-sUK"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NfC-sI-xfv"/>
+                                    <action selector="allClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ua5-vd-9p2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-uX-eok" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
@@ -56,6 +57,7 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="fzk-NU-pfi"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K47-Rp-iKb"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gec-8w-nTY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-vc-n0q" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
@@ -65,6 +67,7 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="c0P-hl-zTL"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evq-kh-Dmq"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOH-G3-YKJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtL-2l-l8H" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
@@ -74,6 +77,7 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="XcW-Pn-Plo"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="db9-hK-FhW"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGZ-hE-4VH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEK-eq-DAX" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
@@ -83,6 +87,7 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="4kI-bq-hkr"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TXa-un-8m6"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogw-db-jeF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAK-lD-6id" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
@@ -92,6 +97,7 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="2Yy-bY-x0O"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQg-Gy-Xin"/>
+                                    <action selector="equalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSo-c1-zkn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3b-cv-37v" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
@@ -201,6 +207,7 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="KeF-3i-9OX"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQZ-De-CXv"/>
+                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIz-pc-G8d"/>
                                 </connections>
                             </button>
                         </subviews>
