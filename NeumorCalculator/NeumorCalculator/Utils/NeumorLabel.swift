@@ -26,8 +26,8 @@ class NeumorLabel: UILabel {
                 calcResultLabel = UILabel()
     
     private func label() {
-//        putTopAndBottom()
-//        putLeftAndRight()
+        putTopAndBottom()
+        putLeftAndRight()
         addSubview(calcResultLabel)
     }
     private func putTopAndBottom() {

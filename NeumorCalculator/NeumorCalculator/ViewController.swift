@@ -10,79 +10,65 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    enum Operator {
-        case undefined
-        case addition
-        case subtraction
-        case multiplication
-        case division
-    }
     
-    var firstValue:Double = 0;
-    var secondValue:Double = 0;
-    var currentOperator = Operator.undefined
-
+    var numberOnScreen:Double = 0
+    var previousNumber:Double = 0
+    var currentOperation = 0
+    var performingMath = false
     
     
 
     @IBOutlet weak var label: NeumorLabel!
     @IBAction func numbers(_ sender: NeumorSquareButton) {
         
-        if currentOperator == .undefined {
-            firstValue = firstValue * 10 + Double(sender.tag)
-            label.text = String(format: "%.0f", firstValue)
+        if performingMath == true {
+            label.text = String(sender.tag-1)
+            numberOnScreen = Double(label.text!)!
             label.putUILabel(text: label.text!)
-
-//        } else if sender.currentTitle == "." {
-//            firstValue = label.text + String(".")
-//            label.text = "\(firstValue)"
+            performingMath = false
         } else {
-            secondValue = secondValue * 10 + Double(sender.tag)
-            label.text = String(format: "%.0f", firstValue)
+            label.text = label.text! + String(sender.tag-1)
+            numberOnScreen = Double(label.text!)!
             label.putUILabel(text: label.text!)
         }
     }
-    
     @IBAction func operatorButtons(_ sender: NeumorSquareButton) {
-        switch sender.currentTitle! {
-        case "+":
-            currentOperator = .addition
-        case "-":
-            currentOperator = .subtraction
-        case "×":
-            currentOperator = . multiplication
-        case "÷":
-            currentOperator = .division
-        default:
-            currentOperator = .undefined
+        if label.text != "" && sender.tag != 19 && sender.tag != 20 {
+            previousNumber = Double(label.text!)!
+            if sender.tag == 11 {
+                label.text = "+"
+            } else if sender.tag == 12 {
+                label.text = "-"
+            } else if sender.tag == 13 {
+                label.text = "×"
+            } else if sender.tag == 14 {
+                label.text = "÷"
+            }
+            label.putUILabel(text: label.text!)
+            currentOperation = sender.tag
+            performingMath = true;
+        } else if sender.tag == 19 {
+            if currentOperation == 11 {
+                label.text = String(previousNumber + numberOnScreen)
+            } else if currentOperation == 12 {
+                label.text = String(previousNumber - numberOnScreen)
+            } else if currentOperation == 13 {
+                label.text = String(previousNumber * numberOnScreen)
+            } else if currentOperation == 14 {
+                label.text = String(previousNumber / numberOnScreen)
+            }
+            label.putUILabel(text: label.text!)
+        } else if sender.tag == 20 {
+            label.text = ""
+            label.putUILabel(text: "")
+            currentOperation = 0
+            performingMath = false
+            previousNumber = 0
+            numberOnScreen = 0
         }
     }
-    var value:Double = 0
-    @IBAction func equalButton(_ sender: NeumorSquareButton) {
-        switch currentOperator {
-        case .addition:
-            value = firstValue + secondValue
-        case .subtraction:
-            value = firstValue - secondValue
-        case .multiplication:
-            value = firstValue * secondValue
-        case .division:
-            value = firstValue / secondValue
-        case .undefined:
-            value = firstValue
-        }
-        label.text = "\(value)"
-        firstValue = 0
-        secondValue = 0
-        currentOperator = .undefined
-    }
-    
-    @IBAction func allClear(_ sender: NeumorSquareButton) {
-        firstValue = 0
-        secondValue = 0
-        currentOperator = .undefined
-        label.text = "0"
-    }
+
+
     
     
     @IBAction func ButtonPush(_ sender: NeumorSquareButton) {

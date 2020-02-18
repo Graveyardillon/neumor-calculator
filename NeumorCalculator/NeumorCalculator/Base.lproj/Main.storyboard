@@ -22,14 +22,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL7-Oh-Kl3" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL7-Oh-Kl3" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="32" y="341" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="C"/>
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="ubY-AG-sUK"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NfC-sI-xfv"/>
-                                    <action selector="allClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ua5-vd-9p2"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vv9-0e-BEr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-uX-eok" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
@@ -50,57 +50,57 @@
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJG-O3-yz0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyY-Dg-uKd" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyY-Dg-uKd" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="312" y="341" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="÷"/>
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="fzk-NU-pfi"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K47-Rp-iKb"/>
-                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gec-8w-nTY"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOa-Du-oj2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-vc-n0q" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-vc-n0q" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="312" y="434" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="×"/>
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="c0P-hl-zTL"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evq-kh-Dmq"/>
-                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOH-G3-YKJ"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ns0-2e-MuS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtL-2l-l8H" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtL-2l-l8H" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="312" y="527" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="XcW-Pn-Plo"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="db9-hK-FhW"/>
-                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGZ-hE-4VH"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hw5-bP-QxY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEK-eq-DAX" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEK-eq-DAX" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="312" y="620" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="4kI-bq-hkr"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TXa-un-8m6"/>
-                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogw-db-jeF"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5N-n4-mEX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAK-lD-6id" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAK-lD-6id" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="312" y="713" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="="/>
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="2Yy-bY-x0O"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQg-Gy-Xin"/>
-                                    <action selector="equalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSo-c1-zkn"/>
+                                    <action selector="operatorButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7l-P3-g15"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3b-cv-37v" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3b-cv-37v" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="32" y="434" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="7"/>
@@ -110,7 +110,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pps-Vw-YRq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-KQ-qFB" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-KQ-qFB" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="125" y="434" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="8"/>
@@ -120,7 +120,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7B-ZQ-4xP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p7-br-6Nc" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p7-br-6Nc" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="219" y="434" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="9"/>
@@ -130,7 +130,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTE-kf-jO6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4b-Kn-HjD" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4b-Kn-HjD" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="32" y="527" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="4"/>
@@ -140,7 +140,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDb-Iq-c9h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-I9-Y2M" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-I9-Y2M" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="125" y="527" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="5"/>
@@ -150,7 +150,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V40-Q4-0o7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-Qy-cUf" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uof-Qy-cUf" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="219" y="527" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="6"/>
@@ -160,7 +160,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IsN-Uz-4gN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M8-Ai-P4L" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M8-Ai-P4L" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="32" y="620" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="1"/>
@@ -170,7 +170,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUM-a9-u1K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgN-sD-c0e" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgN-sD-c0e" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="125" y="620" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="2"/>
@@ -180,7 +180,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hdj-vt-SEa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="479-mn-JQU" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="479-mn-JQU" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="219" y="620" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="3"/>
@@ -190,7 +190,7 @@
                                     <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ax-8v-vUZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqP-CE-3b0" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqP-CE-3b0" customClass="NeumorSquareButton" customModule="NeumorCalculator" customModuleProvider="target">
                                 <rect key="frame" x="32" y="713" width="163" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="0"/>
@@ -207,7 +207,6 @@
                                 <connections>
                                     <action selector="ButtonPush:" destination="BYZ-38-t0r" eventType="touchDown" id="KeF-3i-9OX"/>
                                     <action selector="ButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQZ-De-CXv"/>
-                                    <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIz-pc-G8d"/>
                                 </connections>
                             </button>
                         </subviews>
