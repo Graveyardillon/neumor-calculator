@@ -1,2 +1,2 @@
 # neumor-calculator
-My awesome calculator in nermorphism design.
+My awesome calculator in nermorphism.
